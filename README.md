@@ -14,7 +14,7 @@
 Create `.infura` and `.secret` files. Install the dependencies:
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ## Tests
