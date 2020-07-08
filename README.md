@@ -1,13 +1,13 @@
-# solidity-typescript-template
+# Solidity Typescript Template [OpenZeppelin]
 
-[![Build Status](https://travis-ci.com/ilyakmet/solidity-typescript-template.svg?branch=master)](https://travis-ci.com/ilyakmet/solidity-typescript-template)
-[![codecov](https://codecov.io/gh/ilyakmet/solidity-typescript-template/branch/master/graph/badge.svg)](https://codecov.io/gh/ilyakmet/solidity-typescript-template)
+[![Build Status](https://travis-ci.com/ilyakmet/solidity-typescript-template.svg?branch=openzeppelin)](https://travis-ci.com/ilyakmet/solidity-typescript-template)
+[![codecov](https://codecov.io/gh/ilyakmet/solidity-typescript-template/branch/openzeppelin/graph/badge.svg)](https://codecov.io/gh/ilyakmet/solidity-typescript-template)
 
 ## Developer Tools 🛠️
 
 - [Truffle](https://trufflesuite.com/)
 - [TypeChain](https://github.com/ethereum-ts/TypeChain)
-- [Openzeppelin Contracts](https://openzeppelin.com/contracts/)
+- [Openzeppelin SDK](https://openzeppelin.com)
 
 ## Start
 
@@ -34,11 +34,5 @@ $ yarn coverage
 Deploy to Kovan:
 
 ```bash
-$ NETWORK=kovan yarn deploy
-```
-
-## Verifying Contract Code
-
-```bash
-$ NETWORK=kovan yarn run verify YourContractName
+$ yarn oz deploy
 ```
