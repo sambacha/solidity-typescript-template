@@ -6,9 +6,9 @@
   "author": "ilyakmet <ilyakmet@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile": "npx truffle compile && npx typechain --target truffle './build/**/*.json'",
-    "coverage": "yarn compile && npx truffle run coverage",
-    "test": "yarn compile && npx truffle test",
+    "compile": "yarn truffle compile && yarn typechain --target truffle './build/**/*.json'",
+    "coverage": "yarn compile && yarn truffle run coverage",
+    "test": "yarn compile && yarn truffle test",
     "deploy": "truffle migrate --skipDryRun --network $NETWORK",
     "verify": "truffle run verify --network $NETWORK"
   },
