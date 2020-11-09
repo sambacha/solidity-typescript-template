@@ -1,12 +1,12 @@
 {
   "name": "solidity-typescript-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/ilyakmet/solidity-typescript-template.git",
   "author": "ilyakmet <ilyakmet@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile": "yarn truffle compile && yarn typechain --target truffle './build/**/*.json'",
+    "compile": "yarn truffle compile && yarn typechain --target truffle-v5 './build/**/*.json'",
     "coverage": "yarn compile && yarn truffle run coverage",
     "test": "yarn compile && yarn truffle test",
     "deploy": "truffle migrate --skipDryRun --network $NETWORK",
@@ -24,12 +24,16 @@
     "truffle-flattener": "^1.4.4",
     "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.3.11",
-    "truffle-typings": "^1.0.8",
-    "ts-node": "^8.10.2",
-    "tslint": "^6.1.2",
-    "typechain": "^2.0.0",
-    "typechain-target-truffle": "^1.0.2",
-    "typescript": "^3.9.5"
+		"@truffle/artifactor": "^4.0.85",
+		"@typechain/ethers-v5": "^3.0.0",
+		"@typechain/truffle-v5": "^3.0.0",
+		"@typechain/web3-v1": "^1.0.0",
+		"truffle": "^5.1.52",
+		"truffle-typings": "^1.0.8",
+		"ts-node": "^8.10.2",
+		"tslint": "^6.1.2",
+		"typechain": "^4.0.0",
+		"typescript": "^3.9.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.0.2"
